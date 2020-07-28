@@ -11,7 +11,6 @@ function render() {
     { name: '开源中国', link: 'oschina.net' },
     { name: 'IBM', link: 'developer.ibm.com' },
     { name: 'w3c', link: 'w3.org' },
-    { name: 'iconfont', link: 'iconfont.cn' },
     { name: 'JSBIN', link: 'jsbin.com' },
   ]
   if (window.userSiteList === null) {
