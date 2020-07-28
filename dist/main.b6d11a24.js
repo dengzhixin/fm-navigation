@@ -143,9 +143,6 @@ function render() {
     name: 'w3c',
     link: 'w3.org'
   }, {
-    name: 'iconfont',
-    link: 'iconfont.cn'
-  }, {
     name: 'JSBIN',
     link: 'jsbin.com'
   }];
@@ -241,7 +238,7 @@ function simplifyUrl(url) {
 
 function addToUserList(site, index) {
   var $lastLi = $userSiteList.find('li.last');
-  var $site = $("<li class=\"site\">\n          <a href=\"".concat(site.link, "\">\n            <img class=\"logo\" src=\"//").concat(site.link, "/favicon.ico\" alt=\"").concat(site.name[0], "\"></img>\n            <div class=\"name\">").concat(site.name, "</div>\n          </a>\n        </li>"));
+  var $site = $("<li class=\"site\">\n          <a href=\"//".concat(site.link, "\">\n            <img class=\"logo\" src=\"//").concat(site.link, "/favicon.ico\" alt=\"").concat(site.name[0], "\"></img>\n            <div class=\"name\">").concat(site.name, "</div>\n          </a>\n        </li>"));
   $site.insertBefore($lastLi);
   site = $("\n            <div class=\"site\" >\n              <img class=\"logo\" src=\"//".concat(site.link, "/favicon.ico\" alt=\"").concat(site.name[0], "\"></img>\n              <input type=\"text\" value=\"").concat(site.name, "\" name=\"name\">\n              <input type=\"text\" value=\"").concat(site.link, "\" name=\"link\">\n              \n              <svg class=\"icon icon-delete\" aria-hidden=\"true\" data-index=\"").concat(index, "\">\n                  <use xlink:href=\"#icon-delete\"></use>\n              </svg>\n            </div>"));
   $repositorySiteList.append(site);
@@ -251,4 +248,4 @@ function save() {
   localStorage.setItem('userSiteList', JSON.stringify(userSiteList));
 }
 },{}]},{},["d6sW"], null)
-//# sourceMappingURL=main.0900afc2.js.map
+//# sourceMappingURL=main.b6d11a24.js.map
