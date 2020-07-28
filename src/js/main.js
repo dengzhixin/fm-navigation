@@ -105,7 +105,7 @@ function simplifyUrl(url) {
 function addToUserList(site, index) {
   let $lastLi = $userSiteList.find('li.last')
   let $site = $(`<li class="site">
-          <a href="${site.link}">
+          <a href="//${site.link}">
             <img class="logo" src="//${site.link}/favicon.ico" alt="${site.name[0]}"></img>
             <div class="name">${site.name}</div>
           </a>

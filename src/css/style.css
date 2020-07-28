@@ -83,6 +83,10 @@
 .repository .siteList .site .icon-delete {
   font-size: 80px;
   cursor: pointer;
+  transition: all 300ms;
+}
+.repository .siteList .site .icon-delete:hover {
+  transform: scale(1.1) rotate(10deg);
 }
 .userSiteList .siteList {
   display: flex;
@@ -103,6 +107,17 @@
   justify-content: center;
   align-items: center;
   text-transform: uppercase;
+  transition: all 300ms;
+}
+.userSiteList .siteList .add .logo {
+  transition: all 300ms;
+}
+.userSiteList .siteList .site:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+}
+.userSiteList .siteList .add .logo:hover {
+  transform: scale(1.2) rotate(45deg);
 }
 
 .siteList .site .logo,
