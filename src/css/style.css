@@ -1,0 +1,147 @@
+.SearchBox form {
+  max-width: 300px;
+  width: 80vw;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+}
+
+.SearchBox .icon {
+  width: 64px;
+  height: 64px;
+}
+
+.SearchBox input[type='text'] {
+  margin: 20px;
+}
+
+.repositoryAside {
+  position: fixed;
+  right: 0px;
+  top: 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+.repositoryAside .repositoryBtn {
+  font-size: 20px;
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+  align-self: flex-end;
+  padding: 10px;
+  transition: all 300ms;
+}
+.repositoryAside .repositoryBtn:hover {
+  transform: scale(1.1) rotate(10deg);
+}
+.repositoryAside h3 {
+  color: #151527ab;
+  text-align: center;
+}
+.repositoryAside .hide {
+  transform: translateY(-100%);
+}
+
+.repository {
+  padding: 20px;
+  overflow: auto;
+  background-color: rgba(248, 220, 84, 1);
+}
+.repository .siteList {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(255, 255, 255, 0.98);
+  border-radius: 20px;
+  padding: 0 20px;
+  width: 80vw;
+  max-width: 600px;
+}
+.repository .innerBox {
+  background: rgba(248, 220, 84, 1);
+  max-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.repository .saveBtn {
+  width: 100%;
+  cursor: pointer;
+}
+.repository .cancelBtn {
+  color: white;
+}
+.repository .siteList .site {
+  display: flex;
+  align-items: center;
+}
+.repository .siteList .site .icon-delete {
+  font-size: 80px;
+  cursor: pointer;
+}
+.userSiteList .siteList {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.userSiteList .siteList .site,
+.userSiteList .siteList .site a,
+.userSiteList .siteList .add {
+  margin: 10px;
+  width: 64px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.siteList .site .logo,
+.siteList .add .logo {
+  width: 32px;
+  height: 32px;
+}
+.userSiteList .siteList .site .name {
+  width: 100%;
+  padding-top: 4px;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.dialog {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 100ms;
+}
+.dialog .items {
+  width: 60vw;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.dialog h3 {
+  color: rgba(255, 255, 255, 0.8);
+}
+main .hide {
+  transform: translateY(-100%);
+}
