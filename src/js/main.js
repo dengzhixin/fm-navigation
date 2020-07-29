@@ -52,7 +52,7 @@ $('#addSiteBtn').on('click', () => {
   userSiteList.push(site)
   save()
   render()
-  $('#repositoryBtn').click()
+  $('#cancelBtn').click()
 })
 $('#cancelBtn').on('click', () => {
   let $dialog = $('.dialog')
