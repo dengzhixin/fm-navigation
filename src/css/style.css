@@ -89,14 +89,15 @@
   transform: scale(1.1) rotate(10deg);
 }
 .userSiteList .siteList {
+  max-width: 600px;
+  width: 80vw;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   margin: 0 auto;
   justify-content: center;
-  max-width: 600vw;
-  width: 80vw;
   flex-wrap: wrap;
 }
+
 @media (min-width: 500px) {
   .userSiteList .siteList {
     grid-template-columns: repeat(6, 1fr);
