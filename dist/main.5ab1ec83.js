@@ -186,7 +186,7 @@ $('#addSiteBtn').on('click', function () {
   userSiteList.push(site);
   save();
   render();
-  $('#repositoryBtn').click();
+  $('#cancelBtn').click();
 });
 $('#cancelBtn').on('click', function () {
   var $dialog = $('.dialog');
@@ -248,4 +248,4 @@ function save() {
   localStorage.setItem('userSiteList', JSON.stringify(userSiteList));
 }
 },{}]},{},["d6sW"], null)
-//# sourceMappingURL=main.b6d11a24.js.map
+//# sourceMappingURL=main.5ab1ec83.js.map
